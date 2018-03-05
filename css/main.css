@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0 auto;
   font-family: 'PT Serif', serif;
-  background-color: #DFDED7; }
+  background-color: white; }
 
 .spacer-30 {
   height: 30px; }
@@ -12,6 +12,8 @@ body {
   animation-fill-mode: forwards; }
   .shrinked-nav .nav-group img {
     height: 60px; }
+  .shrinked-nav .nav-group li a {
+    color: #474747; }
 
 .cornerstone-nav {
   position: fixed;
@@ -40,6 +42,8 @@ body {
       .cornerstone-nav ul li a {
         text-decoration: none;
         color: #474747; }
+        .cornerstone-nav ul li a:hover {
+          animation: whiteText .35s ease both; }
       .cornerstone-nav ul li:hover {
         cursor: pointer; }
 
@@ -192,6 +196,66 @@ body {
 @keyframes slideIn {
   100% {
     left: 45%; } }
+/************************
+ ****** Team Page *******
+ ************************/
+.team-pg-nav ul li a {
+  color: whitesmoke; }
+
+.team-banner {
+  height: 500px;
+  width: 100vw;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .team-banner img {
+    height: 100%;
+    width: 100%;
+    animation: splashImage 2s 1s forwards ease; }
+
+.team-txt {
+  margin-top: 3%;
+  height: 75px;
+  width: 60%;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  animation: textSlideUp 2s 1s forwards ease; }
+  .team-txt h1 {
+    color: whitesmoke;
+    font-family: 'Satisfy', cursive;
+    font-size: 60px;
+    text-shadow: 1px 1px gray; }
+
+.team-img {
+  height: 450px; }
+  .team-img img {
+    height: 100%;
+    width: 100%; }
+
+.team-about {
+  height: 200px; }
+  .team-about h4 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    line-height: 40px; }
+
+.profiles .col-md-3 {
+  padding: 0 50px;
+  height: calc(width); }
+  .profiles .col-md-3 img {
+    width: 100%;
+    height: 100%; }
+    .profiles .col-md-3 img:hover {
+      cursor: pointer; }
+  .profiles .col-md-3 h3 {
+    font-family: 'PT Serif', serif;
+    text-align: center; }
+
 @keyframes scaleMe {
   100% {
     transform: scale(2); } }
@@ -204,5 +268,11 @@ body {
   100% {
     opacity: 1;
     top: 50%; } }
+@keyframes whiteText {
+  100% {
+    color: whitesmoke; } }
+@keyframes grayText {
+  100% {
+    color: gray; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,13 +5,11 @@ function shrinkNavOnScroll(){
 
   if (yDistance > shrinkBreakpoint) {
     navElement.classList.add('shrinked-nav');
-    document.querySelector('.js-nav').style.height = '60px';
 
     document.querySelector('.brand').setAttribute('src','http://via.placeholder.com/150x60');
 
   }else {
     navElement.classList.remove("shrinked-nav");
-    document.querySelector('.js-nav').style.height = '100px';
 
     document.querySelector('.brand').setAttribute('src','http://via.placeholder.com/150x100');
   }

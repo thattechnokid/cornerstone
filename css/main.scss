@@ -1,6 +1,7 @@
 $nice-cursive: "'Satisfy', cursive";
 $general-font: "'PT Serif', serif";
-$warm-gray: #DFDED7;
+$warm-gray: white;
+$variable-color: gray;
 
 body{
   padding: 0;
@@ -16,11 +17,18 @@ body{
     img{
       height: 60px;
     }
+    li{
+      a{
+        color: #474747;
+      }
+    }
   }
 
   animation: shrinkNav .5s;
   animation-fill-mode: forwards;
 }
+
+// NOTE:  ------- Navigation ----
 .cornerstone-nav{
   position: fixed;
   z-index: 1;
@@ -44,6 +52,9 @@ body{
       a{
         text-decoration: none;
         color:#474747;
+        &:hover{
+          animation: whiteText .35s ease both;
+        }
       }
       display: inline-block;
       margin-right: 50px;
@@ -57,7 +68,7 @@ body{
   }
 } //End of nav
 
-// welcome image
+// NOTE: ----welcome image----
 .welcome{
   height: 100vh;
   padding: 0;
@@ -239,15 +250,6 @@ body{
   }
 }
 
-
-
-
-
-
-
-
-
-
 .call-hover{
   animation: slideIn 1.0s ease, scaleMe 1.0s ease;
   animation-fill-mode: forwards;
@@ -275,6 +277,84 @@ body{
     left:45%;
   }
 }
+
+/************************
+ ****** Team Page *******
+ ************************/
+.team-pg-nav{
+  ul li a{
+    color:whitesmoke;
+
+  }
+
+}
+.team-banner{
+  height: 500px;
+  width: 100vw;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  img{
+    height:100%;
+    width: 100%;
+    animation: splashImage 2s 1s forwards ease;
+  }
+}
+.team-txt{
+  margin-top: 3%;
+  height: 75px;
+  width: 60%;
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  top:75%;
+  left:50%;
+  animation: textSlideUp 2s 1s forwards ease;
+  h1{
+    color: whitesmoke;
+    font-family: #{$nice-cursive};
+    font-size: 60px;
+    text-shadow: 1px 1px gray;
+  }
+}
+
+.team-img{
+  height: 450px;
+  img{
+    height: 100%;
+    width: 100%;
+  }
+}
+.team-about{
+  height: 200px;
+  h4{
+    text-align: center;
+    font-family: #{$general-font};
+    line-height: 40px;
+  }
+}
+.profiles{
+
+  .col-md-3{
+    padding: 0 50px;
+    height: calc(width);
+    img{
+      width: 100%;
+      height: 100%;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    h3{
+      font-family: #{$general-font};
+      text-align: center;
+    }
+  }
+
+}
+
 @keyframes scaleMe {
   100%{
     transform: scale(2.0);
@@ -294,5 +374,17 @@ body{
   100%{
     opacity: 1;
     top:50%;
+  }
+}
+
+@keyframes whiteText {
+  100%{
+    color: whitesmoke;
+  }
+}
+
+@keyframes grayText {
+  100%{
+    color: gray;
   }
 }
