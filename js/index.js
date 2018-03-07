@@ -15,6 +15,7 @@ function shrinkNavOnScroll(){
   }
 }
 
+
 var callBtn = document.querySelector('.call-btn'),
 callText = document.querySelector('.call-txt');
 
