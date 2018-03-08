@@ -33,6 +33,15 @@ body{
   position: fixed;
   z-index: 1;
   top: 0px;
+  &.services{
+    background-color:rgba(133,133,133,0.7);
+    a{
+      &:hover{
+        animation: grayText .35s ease both;
+      }
+      color:whitesmoke;
+    }
+  }
   background-color:rgba(223,222,215,0.4);
   height: 100px;
   width: 100%;
@@ -59,7 +68,7 @@ body{
       display: inline-block;
       margin-right: 50px;
       position: relative;
-      left: 75%;
+      left: 50%;
       font-size: 18px;
       &:hover{
         cursor: pointer;
@@ -157,6 +166,17 @@ body{
   height: 500px;
   background-color: #434954;
   color:whitesmoke;
+  &.contact-pg{
+    text-align: center;
+    h4{
+      br{
+        margin-bottom: 20px;
+      }
+      i{
+        margin-right:10px;
+      }
+    }
+  }
   h4{
     line-height: 30px;
     text-align: center;
@@ -472,6 +492,144 @@ body{
       }
     }
   }
+}//End of profiles
+
+
+/********************
+*** Services Page ***
+*********************/
+
+.service-content{
+  text-align: center;
+  h1{
+    margin-top: 75px;
+    font-size: 40px;
+    font-family: #{$general-font};
+  }
+  .our-services{
+    list-style-type: none;
+    li{
+      margin-bottom: 20px;
+    }
+  }
+  hr{
+    margin: 50px 0;
+    border-color: #474747;
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+  h2{
+    margin-bottom: 50px;
+  }
+  .pricing-btn{
+    // margin-top: 50px;
+    height:50px;
+    width:200px;
+    background-color: #97C563;
+    color:whitesmoke;
+    border-radius: 15px;
+    font-size: 18px;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+
+/***********************
+****** Pricing Page ****
+************************/
+
+.insurance, .fees{
+  text-align: center;
+  h2{
+    margin-top: 50px;
+  }
+  h4{
+    line-height: 30px;
+  }
+  hr{
+    border-color: #474747;
+  }
+  ul{
+    list-style-type: none;
+    li{
+      margin-bottom: 25px;
+    }
+  }
+  i.fa-arrow-right{
+    margin:0 20px;
+  }
+  p{
+    margin-top: 50px;
+  }
+}
+
+/********************
+*** Contact Page ****
+*********************/
+
+.contact{
+  h1{
+    text-align: center;
+    font-family: #{$nice-cursive};
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  iframe{
+    margin-bottom: 50px;
+  }
+  .form-container{
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px #474747 ;
+    background-color: gainsboro;
+    height:500px;
+    margin-bottom: 75px;
+  }
+  .main-form{
+    .form-icons{
+      position: relative;
+      background: gray;
+      padding: 11px 10px;
+      border-radius: 11px 0 0 11px;
+      margin-right: 0px;
+      i{
+        color: whitesmoke;
+        width:14px;
+        height:14px;
+      }
+      &:nth-of-type(1){
+        margin-right: -3px;
+      }
+    }
+    transform: translate(-50%,0);
+    position: relative;
+    left:50%;
+    input{
+      border: none;
+      border-radius: 0 11px 11px 0;
+      outline: none;
+      height:40px;
+      width: 160px;
+      margin-bottom:30px;
+      &[name=Last-Name]{
+        margin-top:40px;
+        border-radius: 11px;
+      }
+      &[type=submit]{
+        width:100px;
+        border-radius: 11px;
+      }
+      &:focus{
+        color:#474747;
+      }
+    }
+    textarea{
+      margin-bottom: 25px;
+    }
+  }
 }
 
 
@@ -505,7 +663,7 @@ body{
 
 @keyframes grayText {
   100%{
-    color: gray;
+    color: gainsboro;
   }
 }
 @keyframes imagePop {

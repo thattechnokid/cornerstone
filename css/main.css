@@ -23,6 +23,12 @@ body {
   height: 100px;
   width: 100%;
   padding: 0; }
+  .cornerstone-nav.services {
+    background-color: rgba(133, 133, 133, 0.7); }
+    .cornerstone-nav.services a {
+      color: whitesmoke; }
+      .cornerstone-nav.services a:hover {
+        animation: grayText .35s ease both; }
   .cornerstone-nav ul {
     list-style-type: none;
     position: absolute;
@@ -37,7 +43,7 @@ body {
       display: inline-block;
       margin-right: 50px;
       position: relative;
-      left: 75%;
+      left: 50%;
       font-size: 18px; }
       .cornerstone-nav ul li a {
         text-decoration: none;
@@ -115,6 +121,12 @@ body {
   height: 500px;
   background-color: #434954;
   color: whitesmoke; }
+  .footer.contact-pg {
+    text-align: center; }
+    .footer.contact-pg h4 br {
+      margin-bottom: 20px; }
+    .footer.contact-pg h4 i {
+      margin-right: 10px; }
   .footer h4 {
     line-height: 30px;
     text-align: center; }
@@ -323,6 +335,108 @@ body {
   .profile-modal .content ul li {
     margin-top: 20px; }
 
+/********************
+*** Services Page ***
+*********************/
+.service-content {
+  text-align: center; }
+  .service-content h1 {
+    margin-top: 75px;
+    font-size: 40px;
+    font-family: 'PT Serif', serif; }
+  .service-content .our-services {
+    list-style-type: none; }
+    .service-content .our-services li {
+      margin-bottom: 20px; }
+  .service-content hr {
+    margin: 50px 0;
+    border-color: #474747;
+    width: 75%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0); }
+  .service-content h2 {
+    margin-bottom: 50px; }
+  .service-content .pricing-btn {
+    height: 50px;
+    width: 200px;
+    background-color: #97C563;
+    color: whitesmoke;
+    border-radius: 15px;
+    font-size: 18px; }
+    .service-content .pricing-btn:focus {
+      outline: none; }
+
+/***********************
+****** Pricing Page ****
+************************/
+.insurance, .fees {
+  text-align: center; }
+  .insurance h2, .fees h2 {
+    margin-top: 50px; }
+  .insurance h4, .fees h4 {
+    line-height: 30px; }
+  .insurance hr, .fees hr {
+    border-color: #474747; }
+  .insurance ul, .fees ul {
+    list-style-type: none; }
+    .insurance ul li, .fees ul li {
+      margin-bottom: 25px; }
+  .insurance i.fa-arrow-right, .fees i.fa-arrow-right {
+    margin: 0 20px; }
+  .insurance p, .fees p {
+    margin-top: 50px; }
+
+/********************
+*** Contact Page ****
+*********************/
+.contact h1 {
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  margin-bottom: 25px; }
+.contact iframe {
+  margin-bottom: 50px; }
+.contact .form-container {
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px #474747;
+  background-color: gainsboro;
+  height: 500px;
+  margin-bottom: 75px; }
+.contact .main-form {
+  transform: translate(-50%, 0);
+  position: relative;
+  left: 50%; }
+  .contact .main-form .form-icons {
+    position: relative;
+    background: gray;
+    padding: 11px 10px;
+    border-radius: 11px 0 0 11px;
+    margin-right: 0px; }
+    .contact .main-form .form-icons i {
+      color: whitesmoke;
+      width: 14px;
+      height: 14px; }
+    .contact .main-form .form-icons:nth-of-type(1) {
+      margin-right: -3px; }
+  .contact .main-form input {
+    border: none;
+    border-radius: 0 11px 11px 0;
+    outline: none;
+    height: 40px;
+    width: 160px;
+    margin-bottom: 30px; }
+    .contact .main-form input[name=Last-Name] {
+      margin-top: 40px;
+      border-radius: 11px; }
+    .contact .main-form input[type=submit] {
+      width: 100px;
+      border-radius: 11px; }
+    .contact .main-form input:focus {
+      color: #474747; }
+  .contact .main-form textarea {
+    margin-bottom: 25px; }
+
 @keyframes scaleMe {
   100% {
     transform: scale(2); } }
@@ -340,7 +454,7 @@ body {
     color: whitesmoke; } }
 @keyframes grayText {
   100% {
-    color: gray; } }
+    color: gainsboro; } }
 @keyframes imagePop {
   100% {
     transform: scale(1.1); } }
