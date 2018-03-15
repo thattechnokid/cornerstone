@@ -8,10 +8,11 @@ body {
   height: 30px; }
 
 .shrinked-nav {
-  animation: shrinkNav .5s;
+  animation: shrinkNav 1.0s;
   animation-fill-mode: forwards; }
   .shrinked-nav .nav-group img {
-    height: 60px; }
+    height: 60px;
+    width: 200px; }
   .shrinked-nav .nav-group li a {
     color: #474747; }
 
@@ -19,14 +20,14 @@ body {
   position: fixed;
   z-index: 1;
   top: 0px;
-  background-color: rgba(223, 222, 215, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100px;
   width: 100%;
   padding: 0; }
   .cornerstone-nav.services {
-    background-color: rgba(133, 133, 133, 0.7); }
+    background-color: rgba(0, 0, 0, 0.5); }
     .cornerstone-nav.services a {
-      color: whitesmoke; }
+      color: white; }
       .cornerstone-nav.services a:hover {
         animation: grayText .35s ease both; }
   .cornerstone-nav ul {
@@ -38,7 +39,8 @@ body {
       transform: translate(-50%, -50%);
       position: absolute;
       top: 50%;
-      left: 25%; }
+      left: 25%;
+      width: 300px; }
     .cornerstone-nav ul li {
       display: inline-block;
       margin-right: 50px;
@@ -47,7 +49,7 @@ body {
       font-size: 18px; }
       .cornerstone-nav ul li a {
         text-decoration: none;
-        color: #474747; }
+        color: whitesmoke; }
         .cornerstone-nav ul li a:hover {
           animation: whiteText .35s ease both; }
       .cornerstone-nav ul li:hover {
@@ -148,7 +150,8 @@ body {
     height: 500px; }
   .footer img {
     transform: translate(-50%, -50%);
-    margin: 30% 0 0 50%; }
+    margin: 30% 0 0 50%;
+    width: 300px; }
   .footer a {
     color: whitesmoke;
     text-decoration: none; }
@@ -278,7 +281,7 @@ body {
   font-family: 'PT Serif', serif;
   text-align: center; }
 .profiles .interns .col-md-4 {
-  padding: 0 50px;
+  padding: 0 100px;
   height: calc(width); }
   .profiles .interns .col-md-4 img {
     width: 100%;
@@ -376,6 +379,9 @@ body {
     margin-top: 50px; }
   .insurance h4, .fees h4 {
     line-height: 30px; }
+    .insurance h4 span, .fees h4 span {
+      text-decoration: none;
+      color: #474747; }
   .insurance hr, .fees hr {
     border-color: #474747; }
   .insurance ul, .fees ul {
@@ -451,7 +457,7 @@ body {
     top: 50%; } }
 @keyframes whiteText {
   100% {
-    color: whitesmoke; } }
+    color: white; } }
 @keyframes grayText {
   100% {
     color: gainsboro; } }

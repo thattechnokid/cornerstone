@@ -6,12 +6,12 @@ function shrinkNavOnScroll(){
   if (yDistance > shrinkBreakpoint) {
     navElement.classList.add('shrinked-nav');
 
-    document.querySelector('.brand').setAttribute('src','http://via.placeholder.com/150x60');
+    // document.querySelector('.brand').setAttribute('src','../images/full-logo-no-svc.png');
 
   }else {
     navElement.classList.remove("shrinked-nav");
 
-    document.querySelector('.brand').setAttribute('src','http://via.placeholder.com/150x100');
+    // document.querySelector('.brand').setAttribute('src','../images/logo-house.png');
   }
 }
 

@@ -16,6 +16,7 @@ body{
   .nav-group{
     img{
       height: 60px;
+      width: 200px;
     }
     li{
       a{
@@ -24,7 +25,7 @@ body{
     }
   }
 
-  animation: shrinkNav .5s;
+  animation: shrinkNav 1.0s;
   animation-fill-mode: forwards;
 }
 
@@ -34,15 +35,15 @@ body{
   z-index: 1;
   top: 0px;
   &.services{
-    background-color:rgba(133,133,133,0.7);
+    background-color:rgba(0, 0, 0, 0.5);
     a{
       &:hover{
         animation: grayText .35s ease both;
       }
-      color:whitesmoke;
+      color:white;
     }
   }
-  background-color:rgba(223,222,215,0.4);
+  background-color:rgba(0, 0, 0, 0.5);
   height: 100px;
   width: 100%;
   padding: 0;
@@ -56,11 +57,12 @@ body{
       position: absolute;
       top: 50%;
       left: 25%;
+      width:300px;
     }
     li{
       a{
         text-decoration: none;
-        color:#474747;
+        color:whitesmoke;
         &:hover{
           animation: whiteText .35s ease both;
         }
@@ -160,7 +162,7 @@ body{
       right: -200px;
       bottom: -40px;
     }
-  } 
+  }
 }
 .footer{
   height: 500px;
@@ -205,6 +207,7 @@ body{
   img{
     transform: translate(-50%,-50%);
     margin: 30% 0 0 50%;
+    width: 300px;
   }
   a{
     color: whitesmoke;
@@ -414,8 +417,9 @@ body{
       text-align: center;
     }
     .col-md-4{
-      padding: 0 50px;
+      padding: 0 100px;
       height:calc(width);
+
       img{
         width: 100%;
         height: 100%;
@@ -549,6 +553,10 @@ body{
   }
   h4{
     line-height: 30px;
+    span{
+      text-decoration: none;
+      color:#474747;
+    }
   }
   hr{
     border-color: #474747;
@@ -657,7 +665,7 @@ body{
 
 @keyframes whiteText {
   100%{
-    color: whitesmoke;
+    color: white;
   }
 }
 
