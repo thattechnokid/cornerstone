@@ -448,7 +448,7 @@ body {
     transform: scale(2); } }
 @keyframes splashImage {
   100% {
-    filter: blur(1px) brightness(0.8); } }
+    filter: blur(1px) brightness(0.6); } }
 @keyframes textSlideUp {
   0% {
     opacity: 0; }
