@@ -19,6 +19,12 @@ body{
       width: 200px;
     }
     li{
+        &.num{
+          a{
+            color: #0372c7;
+
+          }
+        }
       a{
         color: #474747;
       }
@@ -42,6 +48,7 @@ body{
       }
       color:white;
     }
+
   }
   background-color:rgba(0, 0, 0, 0.5);
   height: 100px;
@@ -60,6 +67,13 @@ body{
       width:300px;
     }
     li{
+      &.num{
+        position: relative;
+        margin-left: 50px;
+        a{
+          color: #3badee;
+        }
+      }
       a{
         text-decoration: none;
         color:whitesmoke;
@@ -344,7 +358,7 @@ body{
 }
 
 .team-img{
-  height: 450px;
+  height: 100%;
   img{
     height: 100%;
     width: 100%;
@@ -548,6 +562,7 @@ body{
 
 .insurance, .fees{
   text-align: center;
+  padding: 0 90px;
   h2{
     margin-top: 50px;
   }

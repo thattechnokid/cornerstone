@@ -13,6 +13,8 @@ body {
   .shrinked-nav .nav-group img {
     height: 60px;
     width: 200px; }
+  .shrinked-nav .nav-group li.num a {
+    color: #0372c7; }
   .shrinked-nav .nav-group li a {
     color: #474747; }
 
@@ -47,6 +49,11 @@ body {
       position: relative;
       left: 50%;
       font-size: 18px; }
+      .cornerstone-nav ul li.num {
+        position: relative;
+        margin-left: 50px; }
+        .cornerstone-nav ul li.num a {
+          color: #3badee; }
       .cornerstone-nav ul li a {
         text-decoration: none;
         color: whitesmoke; }
@@ -247,7 +254,7 @@ body {
     text-shadow: 1px 1px gray; }
 
 .team-img {
-  height: 450px; }
+  height: 100%; }
   .team-img img {
     height: 100%;
     width: 100%; }
@@ -374,7 +381,8 @@ body {
 ****** Pricing Page ****
 ************************/
 .insurance, .fees {
-  text-align: center; }
+  text-align: center;
+  padding: 0 90px; }
   .insurance h2, .fees h2 {
     margin-top: 50px; }
   .insurance h4, .fees h4 {
