@@ -3,11 +3,17 @@ $general-font: "'PT Serif', serif";
 $warm-gray: white;
 $variable-color: gray;
 
+// ========= Media Query Variables =========
+$phone-and-tablet-portrait:"only screen and (min-device-width: 320px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)";
+
 body{
   padding: 0;
   margin: 0 auto;
   font-family: #{$general-font};
   background-color: $warm-gray;
+  @media #{$phone-and-tablet-portrait}{
+
+  }
 }
 .spacer-30{
   height: 30px;
