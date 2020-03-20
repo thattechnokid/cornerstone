@@ -15,10 +15,41 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif|Satisfy" rel="stylesheet">    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+        $("#updateModal").modal();
+        });
+    </script>
   </head>
   <body>
+
     <div class="container-fluid">
+
+       <!-- Modal -->
+       <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModal">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                   aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel">Attention</h4>
+             </div>
+             <div class="modal-body">
+               During this cold and flu season, we are offering teletherapy either by phone or video. Please consult
+               with your
+               therapist to inquire about our telehealth services.
+
+               Thank You, CFC Staff
+             </div>
+             <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+
       <div class="row js-nav" style="height:100px">
         <div class="col-md-12 cornerstone-nav">
 

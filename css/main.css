@@ -4,6 +4,14 @@ body {
   font-family: 'PT Serif', serif;
   background-color: white; }
 
+  .modal-dialog{
+    /* z-index: 1000; */
+    position: absolute;
+    transform: translate(-50%,-50%) !important;
+    top: 50%;
+    left: 50%;
+  }
+
 .spacer-30 {
   height: 30px; }
 
@@ -281,6 +289,47 @@ body {
   .profiles .col-md-3 h3 {
     font-family: 'PT Serif', serif;
     text-align: center; }
+
+.profiles h3 {
+  text-align: center;
+  font-family: 'PT Serif', serif; }
+.profiles .col-md-3 {
+  padding: 0 50px;
+  height: calc(width); }
+  .profiles .col-md-3 img {
+    width: 100%;
+    height: 100%; }
+    .profiles .col-md-3 img:hover {
+      cursor: pointer;
+      animation: imagePop .5s both; }
+  .profiles .col-md-3 h3 {
+    font-family: 'PT Serif', serif;
+    text-align: center; }
+
+
+/* Second row of profile pics modified since greg thomas was removed */
+    .profiles .col-md-4 {
+      padding: 0 100px;
+      height: calc(width);
+    }
+
+    .profiles .col-md-4 img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .profiles .col-md-4 img:hover {
+      cursor: pointer;
+      animation: imagePop .5s both;
+    }
+
+    .profiles .col-md-4 h3 {
+      font-family: 'PT Serif', serif;
+      text-align: center;
+    }
+
+
+
 .profiles .interns h1 {
   text-align: center;
   margin-bottom: 50px; }
